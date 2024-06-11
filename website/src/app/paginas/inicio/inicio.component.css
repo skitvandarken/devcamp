@@ -1,11 +1,23 @@
-.texto-grande{
 
-  
-    z-index: 1 !important;
-
+.no-animation {
+  animation: none; /* No animation for separate h1 element */
 }
 
 
+.botao {
+
+  color: red;
+  background-color: white;
+
+}
+
+.botao:hover  {
+  
+  color: white;
+  background-color: red;
+  cursor: pointer !important;
+
+}
 
   .fundo{
   
@@ -15,8 +27,11 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    margin-top: 0%;
+    height: 80%;
   }
+
+
 
  .fundo, img {
     /* Set the image width slightly larger than the container */

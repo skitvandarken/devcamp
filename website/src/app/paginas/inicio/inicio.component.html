@@ -1,23 +1,41 @@
 <app-navbar></app-navbar>
-<body>
 
-    <!-- Animação-->
-    <div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    <div class="texto-grande uk-text-center">
-      <h1 style="color: white;">IMERSÃO TECNOLÓGIA</h1>
-
-    </div>
-      <!-- Moço -->
-
-      <div class=" fundo uk-container">
-        <div style="margin: 50% !important" class="uk-text-center">
-          <div class="uk-text-left"> <button class="uk-button uk-button-large uk-border-rounded uk-button-danger">TESTE</button></div>
-          </div>
-      </div>
+   
       
-    <p>Teste</p>
-</body>
+<div style="margin-top: 8%;"  class="uk-container">
+  <div class="uk-child-width-1-2@m uk-grid-small uk-grid " uk-grid>
+      <div> 
+          <div class="">
+              <img src="/assets/cloud.png">
+
+      </div>
+  </div>
+
+  <div> 
+      <div class="">
+          <h1 style="color:white" class="uk-heading"><b>Bem-vindo ao <br>DevCamp</b> 2024</h1>
+          <h2 style="color: white;" >Jornada de imersão tecnológica para profissionais e estudantes T.I e bolsa de estágios profissionais na área de T.I.</h2>
+          <h1 style="color: white;" classe="uk-card-title">Aprenda Cloud computing, DevOps e Gestão de Infraestruturas de TI</h1>
+          <div class="uk-inline">
+            <a><button routerLink="/servicos" class=" botao uk-border-rounded uk-button-default uk-button-large uk-margin-small">INSCRIÇÃO</button></a>
+            <a><button routerLink="/servicos" class=" botao uk-border-rounded uk-button-default uk-button-large uk-margin-small-left">ENTRAR NA SALA</button></a>
+          </div>
+        </div>
+  </div>
+
+  </div>
+</div>
+
+<!-- Parceiros-->
+
+<app-parceiros></app-parceiros>
+
+     <!-- Animação-->
+     <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+
+    <app-rodape></app-rodape>

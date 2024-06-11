@@ -14,8 +14,8 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box !important;
-
-    background-image: url('/assets/background.png');
+  
+  background-image: url('/assets/background.png');
     background-size: cover;
     background-size: cover;
     min-height: 100vh;
@@ -28,7 +28,7 @@ body, html {
   line-height: 1.6;
   position: relative;
   font-family: sans-serif;
-  overflow: hidden;
+  background-size: cover;
     
 
 }
