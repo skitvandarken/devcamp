@@ -3,6 +3,8 @@ import { NavbarComponent } from '../../layout/navbar/navbar.component';
 import { RouterLink } from '@angular/router';
 import { RodapeComponent } from '../../layout/rodape/rodape.component';
 import { ParceirosComponent } from '../../layout/parceiros/parceiros.component';
+import { FormularioComponent } from '../../layout/formulario/formulario.component';
+import { TecnologiasComponent } from '../../layout/tecnologias/tecnologias.component';
 
 @Component({
   selector: 'app-inicio',
@@ -11,7 +13,9 @@ import { ParceirosComponent } from '../../layout/parceiros/parceiros.component';
     NavbarComponent,
     RouterLink,
     RodapeComponent,
-    ParceirosComponent
+    ParceirosComponent,
+    FormularioComponent,
+    TecnologiasComponent
     
   ],
   templateUrl: './inicio.component.html',

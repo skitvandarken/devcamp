@@ -1,0 +1,49 @@
+<script>
+    emailjs.send("service_janacmv","template_cixs6zb",{
+      to_name: "",
+      from_name: "",
+      message: "",
+      });
+    </script>
+ 
+<div class="fundo uk-border-rounded">
+
+    <div  class="uk-container">
+
+    <form style="margin-left: 10%; margin-right: 10%; margin-top: 10%;" id="contact-form" class="uk-form-stacked" (submit)="sendEmail($event)" >
+        <div class="uk-margin">
+          <label class="uk-form-label" for="nome">Nome</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" name="from_name" id="nome" type="text" placeholder="Digite seu nome">
+          </div>
+        </div>
+    
+        <div class="uk-margin">
+          <label class="uk-form-label" for="email">Email</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" name="user_email" id="email" type="email" placeholder="Digite seu email">
+          </div>
+        </div>
+    
+        <div class="uk-margin">
+          <label class="uk-form-label" for="assunto">Seu Nº do WhatsApp</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="assunto" type="text" placeholder="Digite o assunto">
+          </div>
+        </div>
+    
+        <div class="uk-margin">
+          <label class="uk-form-label" for="mensagem">Mensagem</label>
+          <div class="uk-form-controls">
+            <textarea class="uk-textarea" name="message" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+          </div>
+        </div>
+    
+        <div class="uk-margin">
+          <button class="botao uk-button uk-button-danger uk-border-rounded uk-button-large" type="submit" value="Send" >Quero Participar</button>
+        </div>
+      </form>
+
+    </div>
+
+</div>

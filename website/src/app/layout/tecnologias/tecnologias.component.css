@@ -10,9 +10,11 @@
 
   .fundo-preto{
 
-    background-color: #2b0000 !important;
+    background-color: #db0000 !important;
     background-blend-mode: multiply  !important;
-    padding: 5%
+    padding: 5%;
+    border-radius: 2px;
+    border-color: white;
   }
 
   .texto {
