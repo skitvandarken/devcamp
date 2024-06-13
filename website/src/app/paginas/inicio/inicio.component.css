@@ -1,7 +1,17 @@
 
-.no-animation {
-  animation: none; /* No animation for separate h1 element */
+.fundo-vermelho{
+
+  background-color: red;
+  color:white !important;
+  border-width: 1px;
+  border-color: white;
 }
+
+.fundo-vermelho :hover {
+  background-color: white;
+  color: red !important;
+}
+
 
 
 .botao {
@@ -15,21 +25,20 @@
   
   color: white;
   background-color: red;
-  cursor: pointer !important;
 
 }
 
-  .fundo{
+.fundo{
   
-    overflow: hidden; /* This hides overflowing content */
-    position: relative; /* Make the container a positioning context */
-    background-image: url('/assets/cloud.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    margin-top: 0%;
-    height: 80%;
-  }
+  overflow: auto; /* This hides overflowing content */
+  position: relative; /* Make the container a positioning context */
+  background-image: url('/assets/cloud.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 0%;
+  height: 80%;
+}
 
 
 
