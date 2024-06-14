@@ -1,21 +1,24 @@
 
+
+
 .fundo-vermelho{
 
-  background-color: red;
+  background-color: red !important;
   color:white !important;
-  border-width: 1px;
-  border-color: white;
+
 }
 
-.fundo-vermelho :hover {
+.fundo-vermelho:hover{
   background-color: white;
   color: red !important;
+  
+
 }
+
 
 
 
 .botao {
-
   color: red;
   background-color: white;
 

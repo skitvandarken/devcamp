@@ -1,12 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-p {
+p, h1, h2, h3, a, li, nav {
 
-    color:white !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+    color:white;
+    font-family: "San Francisco", "SF Pro", sans-serif !important;
 
 }
 
+.uk-container, .uk-heading-medium, .uk-heading-small, .uk-text, .uk-button {
+  font-family: "San Francisco", "SF Pro", sans-serif !important ;
+}
 
 body, html {
 
@@ -16,11 +19,8 @@ body, html {
   box-sizing: border-box !important;
   
   background-image: url('/assets/background.png');
-    background-size: cover;
-    background-size: cover;
-    min-height: 100vh;
-
-    display: table;
+  background-size: cover;
+  min-height: 100vh;
   width: 100%;
   height: 100%;
   background-color: #171717;
@@ -41,7 +41,7 @@ html, body {
   
 /* Lines container styles */
 .lines {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -58,7 +58,7 @@ html, body {
     top: 0;
     left: 50%;
     background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
+    
   }
   
   /* Line animation pseudo-element styles */

@@ -1,8 +1,13 @@
+
+
 <script>
-    emailjs.send("service_janacmv","template_cixs6zb",{
+    emailjs.send("service_janacmv","template_3i9ry0y",{
       to_name: "",
       from_name: "",
       message: "",
+      package:''
+
+     
       });
     </script>
  
@@ -12,9 +17,9 @@
 
     <form style="margin-left: 10%; margin-right: 10%; margin-top: 10%;" id="contact-form" class="uk-form-stacked" (submit)="sendEmail($event)" >
         <div class="uk-margin">
-          <label class="uk-form-label" for="nome">Nome</label>
+          <label class="uk-form-label" for="nome">Nome completo</label>
           <div class="uk-form-controls">
-            <input class="uk-input" name="from_name" id="nome" type="text" placeholder="Digite seu nome">
+            <input class="uk-input" name="from_name" id="nome" type="text" placeholder="Digite seu nome completo">
           </div>
         </div>
     
@@ -25,20 +30,28 @@
           </div>
         </div>
     
+   
         <div class="uk-margin">
-          <label class="uk-form-label" for="assunto">Seu Nº do WhatsApp</label>
+          <label class="uk-form-label" for="mensagem">Pacote</label>
           <div class="uk-form-controls">
-            <input class="uk-input" id="assunto" type="text" placeholder="Digite o assunto">
-          </div>
+            <input class="uk-input uk-hidden" name="message" id="mensagem" type="number" rows="5" placeholder="Ex: +244999999999">
+            </div>
         </div>
-    
+
         <div class="uk-margin">
-          <label class="uk-form-label" for="mensagem">Mensagem</label>
+          <label class="uk-form-label" for="form-horizontal-select">Seleccione</label>
           <div class="uk-form-controls">
-            <textarea class="uk-textarea" name="message" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+              <select class="uk-select" id="form-horizontal-select">
+                  <option>Pacote PLUS</option>
+                  <option>Pacote LIGHT</option>
+                  <option>Pacote ONLINE</option>
+
+              </select>
           </div>
-        </div>
-    
+      </div>
+
+<!--JavaScript-->
+
         <div class="uk-margin">
           <button class="botao uk-button uk-button-danger uk-border-rounded uk-button-large" type="submit" value="Send" >Quero Participar</button>
         </div>
@@ -47,3 +60,6 @@
     </div>
 
 </div>
+
+
+<!--Script-->

@@ -7,13 +7,12 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
   standalone: true,
   imports: [],
   templateUrl: './formulario.component.html',
-  styleUrl: './formulario.component.css'
+  styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent {
   formData = {
     name: '',
     email: '',
-    subject: '',
     message: '',
   };
   successMessage = false;
@@ -23,19 +22,19 @@ export class FormularioComponent {
   public sendEmail(e: Event) {
     e.preventDefault();
 
+   
     emailjs
-      .sendForm('service_janacmv', 'template_cixs6zb', e.target as HTMLFormElement, {
+      .sendForm('service_janacmv', 'template_3i9ry0y', e.target as HTMLFormElement, {
         publicKey: 'oT4Vp8OvVm40Rg-oA',
-        ...this.formData // Spread operator to include form data
+        ...this.formData
       })
       .then(
         () => {
-          this.successMessage = true; // Set message to true on success
+          this.successMessage = true;
           console.log('SUCCESS!');
           this.formData = { // Reset form data to empty object
             name: '',
             email: '',
-            subject: '',
             message: '',
           };
         },
@@ -44,6 +43,4 @@ export class FormularioComponent {
         }
       );
   }
-
-
 }
