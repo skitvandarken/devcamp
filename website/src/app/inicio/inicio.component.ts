@@ -8,6 +8,7 @@ import { ParceirosComponent } from '../layout/parceiros/parceiros.component';
 import { TecnologiasComponent } from '../layout/tecnologias/tecnologias.component';
 import { BeneficiosComponent } from '../layout/beneficios/beneficios.component';
 import { WhatsappComponent } from '../layout/whatsapp/whatsapp.component';
+import { FaqComponent } from '../layout/faq/faq.component';
 
 
 
@@ -22,7 +23,8 @@ import { WhatsappComponent } from '../layout/whatsapp/whatsapp.component';
     TecnologiasComponent,
     BeneficiosComponent,
     NgFor,
-    WhatsappComponent
+    WhatsappComponent,
+    FaqComponent
   
   ],
   standalone: true

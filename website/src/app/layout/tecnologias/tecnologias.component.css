@@ -1,7 +1,16 @@
+.uk-grid {
+  grid-gap: 5px; /* Adjust the value for desired gap size */
+}
+
 .icone {
     color:red
   }
   
+  .fundo-tech{
+    background-color: red;
+    color: white;
+  }
+
   .fundo {
   
     background-color: red;
