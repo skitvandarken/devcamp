@@ -1,0 +1,93 @@
+
+.fundo-form {
+
+  background-color: white;
+  border-color: white;
+
+}
+
+.botao-form {
+
+  background-color: red !important;
+  color: white;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+
+
+
+.fundo-vermelho{
+
+    background-color: red !important;
+    color:white !important;
+  
+  }
+  
+  .fundo-vermelho:hover{
+    background-color: white;
+    color: red !important;
+    
+  
+  }
+  
+  
+  
+  
+  .botao {
+    color: red;
+    background-color: white;
+  
+  }
+  
+  .botao:hover  {
+    
+    color: white;
+    background-color: red;
+  
+  }
+  
+  .fundo{
+    
+    overflow: auto; /* This hides overflowing content */
+    position: relative; /* Make the container a positioning context */
+    background-image: url('/assets/cloud.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 0%;
+    height: 80%;
+  }
+  
+  
+  
+   .fundo, img {
+      /* Set the image width slightly larger than the container */
+  animation: breathe 4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+      
+  }
+    
+    @keyframes breathe {
+      0% {
+        transform: translateX(1); /* Start at original position */
+      }
+      25% {
+        transform: translateX(10px); /* Inhale slightly */
+      }
+      75% {
+        transform: translateX(-10px); /* Exhale slightly */
+      }
+      100% {
+        transform: translateX(1); /* Return to original position */
+      }
+    }
+  
+  

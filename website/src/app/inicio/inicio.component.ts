@@ -12,9 +12,9 @@ import { WhatsappComponent } from '../layout/whatsapp/whatsapp.component';
 
 
 @Component({
-  selector: 'app-teste', // Selector updated to 'app-teste'
-  templateUrl: './teste.component.html', // Template path updated
-  styleUrls: ['./teste.component.css'], // Stylesheet path updated
+  selector: 'app-inicio', // Selector updated to 'app-teste'
+  templateUrl: './inicio.component.html', // Template path updated
+  styleUrls: ['./inicio.component.css'], // Stylesheet path updated
   imports: [FormsModule,
     NavbarComponent,
     RodapeComponent,
@@ -27,7 +27,7 @@ import { WhatsappComponent } from '../layout/whatsapp/whatsapp.component';
   ],
   standalone: true
 })
-export class TesteComponent implements OnInit { // Component class name updated
+export class InicioComponent implements OnInit { // Component class name updated
   selectedOption: string;
   prefilledValue: string;
 
