@@ -4,6 +4,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { AcercaComponent } from './paginas/acerca/acerca.component';
 import { ParceirosComponent } from './layout/parceiros/parceiros.component';
 import { ProgramaComponent } from './paginas/programa/programa.component';
+import { TesteComponent } from './teste/teste.component';
 
 
 export const routes: Routes = [
@@ -13,7 +14,8 @@ export const routes: Routes = [
     {path:'inicio', component:InicioComponent},
     {path:'acerca', component:AcercaComponent},
     {path:'parceiros', component:ParceirosComponent},
-    {path:'programa', component:ProgramaComponent}
+    {path:'programa', component:ProgramaComponent},
+    {path: 'teste', component:TesteComponent}
 
 
 ];

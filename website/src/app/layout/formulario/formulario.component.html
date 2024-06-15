@@ -30,27 +30,31 @@
           </div>
         </div>
     
-   
         <div class="uk-margin">
-          <label class="uk-form-label" for="mensagem">Pacote</label>
+          <label class="uk-form-label" for="select-option">Selecione a opção (Select Option):</label>
           <div class="uk-form-controls">
-            <input class="uk-input uk-hidden" name="message" id="mensagem" type="number" rows="5" placeholder="Ex: +244999999999">
-            </div>
-        </div>
-
-        <div class="uk-margin">
-          <label class="uk-form-label" for="form-horizontal-select">Seleccione</label>
-          <div class="uk-form-controls">
-              <select class="uk-select" id="form-horizontal-select">
-                  <option>Pacote PLUS</option>
-                  <option>Pacote LIGHT</option>
-                  <option>Pacote ONLINE</option>
-
-              </select>
+            <select class="uk-select" id="select-option" [(ngModel)]="selectedOption" name="select-option" (change)="onSelectionChange($event)">
+              <option *ngFor="let option of options" [value]="option.value" name="select-option2">{{ option.label }} </option>
+            </select>
           </div>
-      </div>
-
+        </div>
+        <div class="uk-margin">
+          <label class="uk-form-label" for="prefilled-input">Valor preenchido (Prefilled Value):</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" type="text" id="prefilled-input" [(ngModel)]="prefilledValue" name="prefilled">
+          </div>
+        </div>
+        
 <!--JavaScript-->
+        <script>
+          const selectElement = document.getElementById('form-horizontal-select');
+          const messageInput = document.getElementById('mensagem');
+        
+          selectElement.addEventListener('change', (event) => {
+            messageInput.value = event.target.value;
+          });
+        </script>
+<!--Botão-->
 
         <div class="uk-margin">
           <button class="botao uk-button uk-button-danger uk-border-rounded uk-button-large" type="submit" value="Send" >Quero Participar</button>

@@ -1,0 +1,20 @@
+
+<app-navbar></app-navbar>
+
+<form class="uk-form uk-form-stacked">
+    <div class="uk-margin">
+      <label class="uk-form-label" for="select-option">Selecione a opção (Select Option):</label>
+      <div class="uk-form-controls">
+        <select class="uk-select" id="select-option" [(ngModel)]="selectedOption" name="select-option" (change)="onSelectionChange($event)">
+          <option *ngFor="let option of options" [value]="option.value" name="select-option2">{{ option.label }} </option>
+        </select>
+      </div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="prefilled-input">Valor preenchido (Prefilled Value):</label>
+      <div class="uk-form-controls">
+        <input class="uk-input" type="text" id="prefilled-input" [(ngModel)]="prefilledValue" name="prefilled">
+      </div>
+    </div>
+  </form>
+  

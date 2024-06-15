@@ -7,6 +7,8 @@ import { FormularioComponent } from '../../layout/formulario/formulario.componen
 import { TecnologiasComponent } from '../../layout/tecnologias/tecnologias.component';
 import { WhatsappComponent } from '../../layout/whatsapp/whatsapp.component';
 import { BeneficiosComponent } from '../../layout/beneficios/beneficios.component';
+import { TesteComponent } from '../../teste/teste.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-inicio',
@@ -19,7 +21,10 @@ import { BeneficiosComponent } from '../../layout/beneficios/beneficios.componen
     FormularioComponent,
     TecnologiasComponent,
     WhatsappComponent,
-    BeneficiosComponent
+    BeneficiosComponent,
+    TesteComponent,
+    FormsModule,
+    
     
     
   ],
