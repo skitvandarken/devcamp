@@ -34,7 +34,7 @@ export class InicioComponent implements OnInit { // Component class name updated
   prefilledValue: string;
 
   options = [
-    { value: '30.000,00', label: 'PRESENCIAL' },
+    { value: '40.000,00', label: 'PRESENCIAL' },
     { value: '20.000 Kz', label: 'ONLINE' },
   ];
 
