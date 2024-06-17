@@ -29,7 +29,17 @@ import { FaqComponent } from '../layout/faq/faq.component';
   ],
   standalone: true
 })
-export class InicioComponent implements OnInit { // Component class name updated
+export class InicioComponent implements OnInit { 
+  
+  
+  countryCodes: { name: string, dialCode: string }[] = [
+    { name: 'Angola', dialCode: '244' },
+    
+ 
+    // Add more countries as needed
+  ];
+  
+  // Component class name updated
   selectedOption: string;
   prefilledValue: string;
 

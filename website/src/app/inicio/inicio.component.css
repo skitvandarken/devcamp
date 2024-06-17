@@ -1,4 +1,23 @@
 
+.botao-fale {
+
+  background-color: white;
+  color: red !important;
+}
+
+.botao-fale:hover{
+
+  background-color: red !important;
+  color: white !important;
+  transition: 0.5s;
+}
+
+hr {
+  opacity: 50%;
+  stroke: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+
+}
+
 .fundo-form {
 
     background-color: white;

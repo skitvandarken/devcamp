@@ -1,4 +1,5 @@
 
+
 .fixo {
   display: grid;
   grid-template-rows: 1fr auto; /* Define grid rows */
@@ -55,4 +56,8 @@
     font-size: 12px;
     text-align: center;
     margin-top: 20px;
+  }
+
+  span, li, ul{
+    color: white;
   }

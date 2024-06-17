@@ -22,31 +22,41 @@
 </div>
 
 <!-- Figura e Formulário -->
-<div style="margin-top: 2%;"  class="uk-container uk-flex ">
+<div style="margin-top: 6%;"  class="uk-container uk-flex ">
 
   <div class="uk-child-width-1-2@m uk-grid-small uk-grid " uk-grid>
     
     
-  <div > 
+  <div style="margin-top:10%;" > 
         <img src="/assets/cloud.png">
           
   </div>
 
   <!--Formulário-->
+<div class="uk-text-center">
+  <div class="fundo-form uk-text-center uk-border-rounded">
 
-  <div style="margin-left: 4%;" class="fundo-form uk-text-center uk-border-rounded">
-    <form style= "margin-left: 3%; margin-right: 5%; margin-top: 10%; margin-bottom: 10%;" id="contact-form" class="uk-form-stacked" (submit)="sendEmail($event)" >
+    <div class=""></div> <img style="width: 32px; height: 32px; margin-bottom: -10%;" src="/assets/pagamento/banco-bai.png"> <h4>Pagar agora<br>
+      <b>BANCO BAI: 159264757.10001 <br>
+      IBAN: 0040 0000 5926 4757 1013 4</b></h4>
+
+    <form style= "margin-left: 10%; margin-right: 10%; padding-bottom: 5%;" id="contact-form" class="uk-form-stacked" (submit)="sendEmail($event)" >
       <div class="uk-margin">
         <label class="uk-form-label" for="nome"><h4>Nome completo</h4></label>
         <div class="uk-form-controls">
-          <input class="uk-input uk-border-rounded" name="from_name" id="nome" type="text" placeholder="Digite seu nome completo">
+          <input class="uk-input uk-border-rounded " name="from_name" id="nome" type="text" placeholder="Digite seu nome completo">
         </div>
       </div>
+
+    
   
       <div class="uk-margin">
-        <label class="uk-form-label" for="email"><h4>Contacto telefónico</h4></label>
-        <div class="uk-form-controls">
-          <input class="uk-input uk-border-rounded" name="user_email" id="email" type="number" placeholder="Ex.: +244999000000">
+        <label class="uk-form-label" for="email"><h4>Contacto telefónico / WhatsApp</h4></label>
+        <div   class="uk-grid-small uk-form-controls">
+          <select  class="uk-select uk-border-rounded" id="country-code" name="pais">
+            <option class="uk-text-center" *ngFor="let code of countryCodes" [value]="code.dialCode">{{ code.name }} (+{{ code.dialCode }})</option>
+          </select>
+          <input class="uk-form-large uk-input  uk-border-rounded" name="user_email" id="email" type="number"  max="1" placeholder="Ex.: 920 000 000 ">
         </div>
       </div>
   
@@ -59,7 +69,7 @@
         </div>
       </div>
       <div class="uk-margin">
-        <label class="uk-form-label" for="prefilled-input"><h4>Valor do Investimento:<br>(escolha um pacote acima)</h4></label>
+        <label class="uk-form-label" for="prefilled-input"><h4>Valor a pagar:<br>(escolha um pacote acima)</h4></label>
         <div class="uk-form-controls">
           <input readonly style="background-color: rgb(160, 209, 192);" class="uk-border-rounded uk-input mouse-off" type="text" id="prefilled-input" [(ngModel)]="prefilledValue" name="message">
         </div>
@@ -69,10 +79,22 @@
         <button class="botao-participar uk-button uk-button-danger uk-border-rounded uk-button-large" type="submit" value="Send" >Quero Participar</button>
       </div>
     </form>
+
+<!-- Javascript do código de país-->
+      <script>
+      const countryCodeSelect = document.getElementById('country-code');
+      const phoneInput = document.getElementById('email');
+      
+      countryCodeSelect.addEventListener('change', (event) => {
+        const selectedCode = event.target.value;
+        phoneInput.value = selectedCode + phoneInput.value;
+      });   
+    </script>
  
   </div>
 
 </div>
+  </div>
 
 
 <!--Texto:  Porquê participar-->
@@ -80,16 +102,19 @@
 </div>
 
 
-
-<div style="margin-top: 3%;" class="uk-container uk-text-center">
+<div style="margin-top: 5%; margin-bottom: 5%;" class="uk-container uk-text-center">
   <h1 style="color: white;" classe="uk-text-center uk-card-title">
     Porquê Participar?
   </h1>
 </div>
 
+
 <!-- Cards benefícios -->
 
 <app-beneficios></app-beneficios>
+
+<hr style="margin-top: 4%;">
+
 <div style="margin-top: 4%;" class="uk-container uk-text-center">
 <div class="uk-child-width-1-2@m uk-grid-small uk-grid " uk-grid>
     <div>
@@ -99,10 +124,12 @@
     <div class="uk-text-center">
     <h1>Venha viver uma experiência de nível internacional e ganhe brindes incríveis! </h1>
         <h2>A <b>Angola Cables</b>, empresa parceira do programa tem vários <b>brindes</b> preparados para você que vai marcar presença no <b>DevCamp 2024</b></h2>
-        <a class="margin-top:2%" style="color:black" href="https://wa.me/244937754502/?text=Ol%C3%A1%2C%20estou%20interessado%20em%20servi%C3%A7o%20vosso%2C%20h%C3%A1%20algu%C3%A9m%20dispon%C3%ADvel%20agora%20para%20me%20atender%3F"><button class="uk-button uk-border-rounded uk-button-large botao-saiba">FALE CONNOSCO</button></a>
+        <a class="margin-top:2%" style="color:black" href="https://wa.me/244937754502/?text=Ol%C3%A1%2C%20estou%20interessado%20em%20servi%C3%A7o%20vosso%2C%20h%C3%A1%20algu%C3%A9m%20dispon%C3%ADvel%20agora%20para%20me%20atender%3F"><button class="botao-fale uk-button uk-border-rounded uk-button-large botao-saiba">FALE CONNOSCO</button></a>
     </div>
 </div>
 </div>
+
+<hr>
 
 <!-- Tecnologias-->
 
