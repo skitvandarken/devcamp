@@ -98,6 +98,10 @@ export class InicioComponent implements OnInit {
             message: '',
             prefilled: '',
           };
+
+           // Redirect to Google Form after successful email sending
+        window.location.href = "https://forms.gle/K7uU3CiTJxuz8VKs9";
+
         },
         (error) => {
           console.log('FAILED...', (error as EmailJSResponseStatus).text);
