@@ -2,12 +2,12 @@
 .botao-fale {
 
   background-color: white;
-  color: red !important;
+  color: green !important;
 }
 
 .botao-fale:hover{
 
-  background-color: red !important;
+  background-color: green !important;
   color: white !important;
   transition: 0.5s;
 }
