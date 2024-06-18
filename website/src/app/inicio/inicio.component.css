@@ -12,6 +12,19 @@
   transition: 0.5s;
 }
 
+.botao-agenda {
+  color: red;
+  background-color: white;
+
+}
+
+.botao-agenda:hover  {
+  
+  color: white;
+  background-color: rgb(168, 0, 0);
+
+}
+
 hr {
   opacity: 50%;
   stroke: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
