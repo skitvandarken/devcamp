@@ -34,6 +34,7 @@ export class InicioComponent implements OnInit {
   
   countryCodes: { name: string, dialCode: string }[] = [
     { name: 'Angola', dialCode: '244' },
+
     
  
     // Add more countries as needed
@@ -44,8 +45,8 @@ export class InicioComponent implements OnInit {
   prefilledValue: string;
 
   options = [
-    { value: '40.000,00', label: 'PRESENCIAL' },
-    { value: '20.000 Kz', label: 'ONLINE' },
+    { value: '40.000 Kz', label: 'PRESENCIAL' },
+    { value: '20.000 Kz / 19$', label: 'ONLINE' },
   ];
 
 
