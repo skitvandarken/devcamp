@@ -9,6 +9,8 @@ import { TecnologiasComponent } from '../layout/tecnologias/tecnologias.componen
 import { BeneficiosComponent } from '../layout/beneficios/beneficios.component';
 import { WhatsappComponent } from '../layout/whatsapp/whatsapp.component';
 import { FaqComponent } from '../layout/faq/faq.component';
+import { RouterLink } from '@angular/router';
+import { SalavirtualComponent } from '../salavirtual/salavirtual.component';
 
 
 
@@ -16,7 +18,9 @@ import { FaqComponent } from '../layout/faq/faq.component';
   selector: 'app-inicio', // Selector updated to 'app-teste'
   templateUrl: './inicio.component.html', // Template path updated
   styleUrls: ['./inicio.component.css'], // Stylesheet path updated
-  imports: [FormsModule,
+  imports: [
+    RouterLink,
+    FormsModule,
     NavbarComponent,
     RodapeComponent,
     ParceirosComponent,
@@ -24,7 +28,8 @@ import { FaqComponent } from '../layout/faq/faq.component';
     BeneficiosComponent,
     NgFor,
     WhatsappComponent,
-    FaqComponent
+    FaqComponent,
+    SalavirtualComponent
   
   ],
   standalone: true
