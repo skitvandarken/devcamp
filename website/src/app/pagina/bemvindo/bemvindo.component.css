@@ -1,0 +1,153 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #25D366;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .botao-fale {
+  
+    background-color: white;
+    color: green !important;
+  }
+  
+  .botao-fale:hover{
+  
+    background-color: green !important;
+    color: white !important;
+    transition: 0.5s;
+  }
+  
+  .botao-agenda {
+    color: red;
+    background-color: white;
+  
+  }
+  
+  .botao-agenda:hover  {
+    
+    color: white;
+    background-color: rgb(168, 0, 0);
+    cursor: pointer;
+  
+  }
+  
+  hr {
+    opacity: 50%;
+    stroke: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+  
+  }
+  
+  .fundo-form {
+  
+      background-color: white;
+      border-color: white;
+    
+    }
+  
+  
+    .uk-button-danger{
+      background-color: red;
+    }
+  
+    .uk-button-danger:hover{
+      
+      background-color: rgb(143, 10, 10);
+      transition: 0.5ms;
+  
+    }
+    
+    
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0; 
+    }
+    
+    
+    .fundo-vermelho{
+        background-color: red !important;
+        color:white !important;
+      
+      }
+      
+      .fundo-vermelho:hover{
+        background-color: white;
+        color: red !important;
+        
+      
+      }
+      
+      
+      
+      
+      .botao {
+        color: red;
+        background-color: white;
+      
+      }
+      
+      .botao:hover  {
+        
+        color: white;
+        background-color: red;
+      
+      }
+      
+      .fundo{
+        
+        overflow: auto; /* This hides overflowing content */
+        position: relative; /* Make the container a positioning context */
+        background-image: url('/assets/cloud.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        margin-top: 0%;
+        height: 80%;
+      }
+      
+      
+      
+       .fundo, img {
+          /* Set the image width slightly larger than the container */
+      animation: breathe 4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+          
+      }
+        
+        @keyframes breathe {
+          0% {
+            transform: translateX(1); /* Start at original position */
+          }
+          25% {
+            transform: translateX(10px); /* Inhale slightly */
+          }
+          75% {
+            transform: translateX(-10px); /* Exhale slightly */
+          }
+          100% {
+            transform: translateX(1); /* Return to original position */
+          }
+        }
+      
+      

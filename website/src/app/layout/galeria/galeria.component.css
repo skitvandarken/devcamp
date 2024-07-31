@@ -1,0 +1,12 @@
+.galeria {
+    background-color: white !important;
+    color: black !important;
+}
+.texto-galeria {
+    color: black;
+}
+
+.iframe-conatiner {
+    border-radius: 10px;
+    overflow: hidden;
+}
