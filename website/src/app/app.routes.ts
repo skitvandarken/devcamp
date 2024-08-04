@@ -5,6 +5,7 @@ import { TesteComponent } from './teste/teste.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SalavirtualComponent } from './salavirtual/salavirtual.component';
 import { BemvindoComponent } from './pagina/bemvindo/bemvindo.component';
+import { ValidacaoComponent } from './validacao/validacao.component';
 
 
 export const routes: Routes = [
@@ -14,7 +15,7 @@ export const routes: Routes = [
     {path:'inicio', component:InicioComponent},
     {path:'parceiros', component:ParceirosComponent},
     {path: 'teste', component:TesteComponent},
-    {path:'salavirtual', component:SalavirtualComponent}
-
+    {path:'salavirtual', component:SalavirtualComponent},
+    {path:'validacao', component:ValidacaoComponent}
 
 ];
