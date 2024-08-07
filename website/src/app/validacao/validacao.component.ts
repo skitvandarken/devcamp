@@ -22,9 +22,8 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 
 
 
-
 export class ValidacaoComponent {
- formValidacao: FormGroup;
+formValidacao: FormGroup;
 
  constructor(private fb: FormBuilder) {
   this.formValidacao = this.fb.group({
@@ -36,6 +35,10 @@ export class ValidacaoComponent {
  onSubmit() {
   
     console.log('Formulário submetido')
+  
+ }
+
+ onLogin() {
   
  }
 
