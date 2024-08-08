@@ -34,6 +34,9 @@ export class LoginComponent implements OnInit {
       .subscribe((res: any) => {
         if (res.result) {
           alert('Logado com sucesso');
+          localStorage.setItem('angula18Token', res.data.token)
+
+  
           this.router.navigateByUrl('/painel');
         } else {
           alert(res.message);

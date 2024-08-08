@@ -15,15 +15,14 @@ import { Component } from '@angular/core';
 
 export const routes: Routes = [
 
-    //{path:'', component:BemvindoComponent},
+    {path:'', component:BemvindoComponent},
     {path:'navbar', component:NavbarComponent},
     {path:'inicio', component:InicioComponent},
     {path:'parceiros', component:ParceirosComponent},
     {path: 'teste', component:TesteComponent},
     {path:'salavirtual', component:SalavirtualComponent},
-    {path:'validacao', 
 
-         
+    {path:'validacao', 
         component:LoginComponent,
         children:[
             {path:'painel',
