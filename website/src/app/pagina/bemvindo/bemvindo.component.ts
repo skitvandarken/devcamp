@@ -8,6 +8,7 @@ import { RodapeComponent } from '../../layout/rodape/rodape.component';
 import { GaleriaComponent } from "../../layout/galeria/galeria.component";
 import { GaleriaFotosComponent } from '../../layout/galeria-fotos/galeria-fotos.component';
 import { CalendarioComponent } from '../../layout/calendario/calendario.component';
+import { EspecialidadeComponent } from '../../layout/especialidade/especialidade.component';
 
 @Component({
   selector: 'app-bemvindo',
@@ -21,7 +22,8 @@ import { CalendarioComponent } from '../../layout/calendario/calendario.componen
     RodapeComponent,
     GaleriaComponent,
     GaleriaFotosComponent,
-    CalendarioComponent
+    CalendarioComponent,
+    EspecialidadeComponent
 ],
   templateUrl: './bemvindo.component.html',
   styleUrl: './bemvindo.component.css'

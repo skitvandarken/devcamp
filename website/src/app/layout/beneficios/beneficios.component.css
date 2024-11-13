@@ -1,6 +1,8 @@
 .uk-card{
-    background-color: red;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: red;
 }
-
+h3, p{
+  color: red;
+}
 

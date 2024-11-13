@@ -9,9 +9,10 @@
     package:'',
     prefilled:''
 
-   
+
     });
   </script>
+
 
 <!-- Boas vindas -->
 <div style="margin-top: 2%;" class="uk-container uk-text-center">
@@ -29,9 +30,9 @@
 <div style="margin-top: 6%;"  class="uk-container uk-flex uk-text-center">
 
   <div style="background-color: red;" class="uk-text-center uk-border-rounded uk-child-width-1-2@m uk-grid-small uk-grid " uk-grid>
-    
+
   <div class="uk-text-center" style="margin-top:5%;">
-        <h1>Comece sua carreira em T.I,<br>um mercado em ascensão em Angola.</h1> 
+        <h1>Comece sua carreira em T.I,<br>um mercado em ascensão em Angola.</h1>
         <img style="width: 80%; margin-bottom: 10%; " src="/assets/cloud.png">
        <a href="https://devcamp.fluxo-digital.com/downloads/Agenda-DevCamp2024.pdf"> <button  class="botao-agenda uk-border-rounded uk-button uk-button-large uk-border-round">Agenda da Formação</button></a>
     </div>
@@ -53,8 +54,8 @@
         </div>
       </div>
 
-    
-  
+
+
       <div class="uk-margin">
         <label class="uk-form-label" for="email"><h4>Contacto telefónico / WhatsApp</h4></label>
         <div   class="uk-grid-small uk-form-controls">
@@ -64,7 +65,7 @@
           <input class="uk-form-large uk-input  uk-border-rounded" name="user_email" id="email" type="number"  max="1" placeholder="Ex.: 920 000 000 ">
         </div>
       </div>
-  
+
       <div class="uk-margin">
         <label class="uk-form-label" for="select-option"><h4>Escolha um pacote:</h4></label>
         <div class="uk-form-controls">
@@ -79,7 +80,7 @@
           <input readonly style="background-color: rgb(160, 209, 192);" class="uk-border-rounded uk-input mouse-off" type="text" id="prefilled-input" [(ngModel)]="prefilledValue" name="message">
         </div>
       </div>
-      
+
       <div class="uk-margin">
         <button class="botao-participar uk-button uk-button-danger uk-border-rounded uk-button-large" type="submit" value="Send" >Quero Participar</button>
       </div>
@@ -92,13 +93,13 @@
       <script>
       const countryCodeSelect = document.getElementById('country-code');
       const phoneInput = document.getElementById('email');
-      
+
       countryCodeSelect.addEventListener('change', (event) => {
         const selectedCode = event.target.value;
         phoneInput.value = selectedCode + phoneInput.value;
-      });   
+      });
     </script>
- 
+
   </div>
 
 </div>

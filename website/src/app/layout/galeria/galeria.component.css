@@ -9,4 +9,59 @@
 .iframe-conatiner {
     border-radius: 10px;
     overflow: hidden;
+} /* Container Flex para os botões */
+.button-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaço entre os botões */
+  margin: 10%;
+}
+
+/* Estilos dos botões */
+.button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Botão primário */
+.button-primary {
+  background-color: #ffffff;
+  color:#000;
+  font-weight: 400;
+}
+
+.button-primary:hover {
+  background-color: #fc3729;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Botão secundário */
+.button-secondary {
+  background-color: #ffff;
+  color:#000;
+  font-weight: 400;
+}
+
+.button-secondary:hover {
+  background-color: #fd0a0a;
+  transform: scale(1.05);
+  color: #fff;
+}
+h5{
+  color:#ffffff;
+  font-weight: 600;
+}
+h1{
+  font-weight: 700;
+}
+video{
+  height: 100%;
+  margin-top: 20px #fff;
 }

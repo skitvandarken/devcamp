@@ -1,21 +1,31 @@
+.fundo{
+  width:100%;
+  background:#fefefe;
+  display:flex;
+  align-items:center;
+  margin:0 auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
 .uk-grid {
   grid-gap: 5px; /* Adjust the value for desired gap size */
 }
-
+.spaco{
+  margin-top: -10%;
+}
 .icone {
     color:red
   }
-  
+
   .fundo-tech{
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+
+
     color: white;
   }
 
-  .fundo {
-  
-    background-color: red;
-  
-  }
+
 
   .fundo-preto{
 
@@ -29,39 +39,44 @@
   .texto {
     color:black !important
   }
-  
+
   .banner {
     width: 100%;
     height: auto;
     padding-top: 24px;
   }
-  
-  
+
+
   .dominios {
-  
+
       display:inline-block;
       padding-left: 10%;
       padding-right: 10%;
-  
+
   }
 
-  h1, h3,  p {
+ h3,  p {
 
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
   }
 
- 
+
+  h1{
+    color:#db0000;
+  }
 .botao {
 
     color: red;
     background-color: white;
-  
+
   }
-  
+
   .botao:hover  {
-    
+
     color: white;
     background-color: red;
     cursor: pointer !important;
-  
+
   }
+
+ 

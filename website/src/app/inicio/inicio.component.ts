@@ -30,21 +30,21 @@ import { SalavirtualComponent } from '../salavirtual/salavirtual.component';
     WhatsappComponent,
     FaqComponent,
     SalavirtualComponent
-  
+
   ],
   standalone: true
 })
-export class InicioComponent implements OnInit { 
-  
-  
+export class InicioComponent implements OnInit {
+
+
   countryCodes: { name: string, dialCode: string }[] = [
     { name: 'Angola', dialCode: '244' },
 
-    
- 
+
+
     // Add more countries as needed
   ];
-  
+
   // Component class name updated
   selectedOption: string;
   prefilledValue: string;
@@ -84,11 +84,11 @@ export class InicioComponent implements OnInit {
   }
 
 
-  
+
   public sendEmail(e: Event) {
     e.preventDefault();
 
-   
+
     emailjs
       .sendForm('service_janacmv', 'template_3i9ry0y', e.target as HTMLFormElement, {
         publicKey: 'oT4Vp8OvVm40Rg-oA',

@@ -1,8 +1,8 @@
 .fundo-faq{
-
+  padding: 20px;
     background-color: rgb(247, 247, 247);
 }
 
 h1, p, a h2, h3{
-   color: black; 
+   color: black;
 }
