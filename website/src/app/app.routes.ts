@@ -6,6 +6,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SalavirtualComponent } from './salavirtual/salavirtual.component';
 import { BemvindoComponent } from './pagina/bemvindo/bemvindo.component';
 import { ValidacaoComponent } from './validacao/validacao.component';
+import { SlidesComponent } from './slides/slides.component';
 
 
 export const routes: Routes = [
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path:'parceiros', component:ParceirosComponent},
     {path: 'teste', component:TesteComponent},
     {path:'salavirtual', component:SalavirtualComponent},
-    {path:'validacao', component:ValidacaoComponent}
+    {path:'validacao', component:ValidacaoComponent},
+    {path:'publicidade', component:SlidesComponent}
 
 ];
