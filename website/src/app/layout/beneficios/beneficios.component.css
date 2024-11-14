@@ -1,8 +1,17 @@
 .uk-card{
-    background-color: rgb(255, 255, 255);
-    color: red;
+    color: rgb(255, 0, 0);
+    border: 3px;
+    border-color: red;
+    border-style:solid;
+    border-radius: 20;
+
 }
 h3, p{
-  color: red;
+  color: rgb(255, 0, 0);
 }
 
+.beneficio{
+  padding:55px;
+  background:white;
+
+}

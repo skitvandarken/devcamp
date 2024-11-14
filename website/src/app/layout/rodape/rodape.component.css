@@ -1,66 +1,84 @@
-
-
-.fixo {
-  display: grid;
-  grid-template-rows: 1fr auto; /* Define grid rows */
+.site-footer {
+  background-color: white;
+  padding: 40px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow at the top */
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
-  .footer {
-    background-color:white;
-    color:red;
-    padding: 20px;
-    margin-top: 5%;
-  }
 
-  .footer-heading {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color:rgb(255, 0, 0)
-  }
+.site-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-  .footer-text {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
+/* Footer content layout: 3 columns */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds space between columns */
 
-  .footer-contact {
-    margin-bottom: 20px;
-  }
+}
 
-  .footer-contact-heading {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: rgb(255, 0, 0);
-  }
+/* Footer columns style */
+.footer-column {
+  flex: 1;
+  min-width: 300px;
+}
 
-  .footer-contact-info {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+}
 
-  .footer-contact-toggle {
-    margin-top: 10px;
-  }
+.footer-links li {
+  margin-bottom: 10px;
+}
 
-  .footer-contact-toggle .uk-accordion-content {
-    padding: 0;
-  }
+.footer-links a {
+  text-decoration: none;
+  color:#333;
+  transition: color 0.3s;
+}
 
-  .footer-contact-toggle .uk-accordion-title {
-    padding: 0;
-    margin: 0;
-  }
+.footer-links a:hover {
+  color: #f0506e; /* Change link color on hover */
+}
 
-  .footer-copyright {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 20px;
-  }
 
-  span, li, ul, p{
-    color: rgb(255, 0, 0);
-  }
-  .copy{
-    color: #fff;
-  }
+
+/* Social Media Icons */
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+}
+
+.social-links a:hover {
+  color: #f0506e; /* Change icon color on hover */
+}
+
+/* Google Maps iframe styling */
+.footer-column iframe {
+  border-radius: 8px; /* Rounded edges for the map */
+  margin-top: 15px;
+}
+
+.link{
+  color: #333 !important;
+}
+p{
+  color: #333;
+}

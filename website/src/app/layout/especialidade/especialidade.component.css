@@ -51,3 +51,8 @@
 .card:hover {
   border-image: linear-gradient(to right, red, rgb(255, 93, 93)) 1; /* Ensures the gradient remains on hover */
 }
+
+
+.fundo{
+  background-image: url('/assets/background.png');
+}

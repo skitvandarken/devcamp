@@ -7,16 +7,16 @@
 }
 
 .iframe-conatiner {
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
 } /* Container Flex para os botões */
 .button-container {
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   gap: 20px; /* Espaço entre os botões */
-  margin: 10%;
+
+  margin-top: 30px;
 }
 
 /* Estilos dos botões */
