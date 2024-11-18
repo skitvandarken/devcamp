@@ -2,16 +2,26 @@
 <app-navbar></app-navbar>
 
 
-<!-- Boas vindas -->
+
+
+<!-- Boas vindas
 <div style="margin-top: 2%;" class="uk-container uk-text-center">
-    <div class="uk-text-center uk-card uk-card-hover uk-card-default uk-border-rounded uk-card-body">
-        <h3 style="color:red" class="uk-card-title">INSCRIÇÕES ENCERRADAS</h3>
-    </div>
-    <h1 style="color: white;" classe="uk-text-center uk-card-title"> <b> DevCamp 2024: Cloud Computing</b>, <b>DevOps</b><br>e <b>Administração de Servidores Linux</b>
-     <br><b>20</b> e <b>27</b> de <b>Julho</b> de 2024 </h1>
+
+    <h1 style="color: white;" classe="uk-text-center uk-card-title"> <> O melhor bootcamp sobre Cloud Computing, DevOps, Administração de Servidores Linux</h1>
   </div>
-  
+  <div class="button-container">
+
+    <button class="button button-primary">Agenda</button>
+
+    <button class="button button-secondary">Inscrever-se</button>
+    </div>
+-->
 <app-galeria></app-galeria>
+<!-- Tecnologias-->
+
+<app-tecnologias></app-tecnologias>
+<app-especialidade></app-especialidade>
+
 <app-galeria-fotos></app-galeria-fotos>
 
 
@@ -19,40 +29,45 @@
 
 
 
-<div style="margin-top: 5%; margin-bottom: 5%;" class="uk-container uk-text-center">
-  <h1 style="color: white;" classe="uk-text-center uk-card-title">
-    Porquê Participar?
-  </h1>
-  <h2>Benefícios da participação presencial</h2>
-</div>
+
 
 
 <!-- Cards benefícios -->
 
 <app-beneficios></app-beneficios>
 
-<hr style="margin-top: 4%;">
 
-<div style="margin-top: 4%;" class="uk-container uk-text-center">
-<div class="uk-child-width-1-2@m uk-grid-small uk-grid " uk-grid>
-    <div>
 
+<div class="background-div">
+  <div class="contento">
+
+    <div class="content-brinds">
+      <!-- Card 1 -->
+      <div class="brind-img">
         <img src="assets/angola-cables-brindes.png">
+      </div>
+
+      <!-- Card 2 -->
+
+        <div class=" brind-text ">
+          <h1 style="font-weight: 800; color:white">Venha viver uma experiência<br> de nível internacional e <br>ganhe brindes incríveis! </h1>
+              <h3 style="color:#ffffff">A <b style="color:#ffffff">Angola Cables</b>, empresa parceira do programa tem vários <b style="color:#ffffff">brindes</b> <br> preparados para você que vai marcar presença no <b style="color:#ffffff">DevCamp 2024</b></h3>
+              <a class="margin-top:2%" style="color:black; background:green;" href="https://wa.me/244937754502/?text=Ol%C3%A1%2C%20estou%20interessado%20em%20servi%C3%A7o%20vosso%2C%20h%C3%A1%20algu%C3%A9m%20dispon%C3%ADvel%20agora%20para%20me%20atender%3F"><button class="botao-fale uk-button uk-border-rounded uk-button-large botao-saiba"><span uk-icon="icon: whatsapp"></span>
+                FALE CONNOSCO</button></a>
+          </div>
+      </div>
     </div>
-    <div class="uk-text-center">
-    <h1>Venha viver uma experiência de nível internacional e ganhe brindes incríveis! </h1>
-        <h2>A <b>Angola Cables</b>, empresa parceira do programa tem vários <b>brindes</b> preparados para você que vai marcar presença no <b>DevCamp 2024</b></h2>
-        <a class="margin-top:2%" style="color:black" href="https://wa.me/244937754502/?text=Ol%C3%A1%2C%20estou%20interessado%20em%20servi%C3%A7o%20vosso%2C%20h%C3%A1%20algu%C3%A9m%20dispon%C3%ADvel%20agora%20para%20me%20atender%3F"><button class="botao-fale uk-button uk-border-rounded uk-button-large botao-saiba"><span uk-icon="icon: whatsapp"></span>
-          FALE CONNOSCO</button></a>
-    </div>
-</div>
-</div>
 
-<hr>
+  </div>
 
-<!-- Tecnologias-->
 
-<app-tecnologias></app-tecnologias>
+
+
+
+
+
+
+
 
 
 <!-- Parceiros-->
@@ -63,8 +78,7 @@
 
 <app-faq></app-faq>
 
-<!--Rodapé-->
-<app-rodape></app-rodape>
+
 
 
 <a href="https://wa.me/244937754502/?text=Ol%C3%A1%2C%20estou%20interessado%20em%20servi%C3%A7o%20vosso%2C%20h%C3%A1%20algu%C3%A9m%20dispon%C3%ADvel%20agora%20para%20me%20atender%3F" target="_blank" class="whatsapp-button">
@@ -75,3 +89,5 @@
 <!-- Add Font Awesome CDN link if you want to use the WhatsApp icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!--Rodapé-->
+<app-rodape></app-rodape>

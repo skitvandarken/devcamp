@@ -1,21 +1,54 @@
-<nav class="uk-navbar-container uk-container-transparent vermelho">
-    <div class="uk-container">
-        <div uk-navbar>
+<!DOCTYPE html>
+<html lang="en">
 
-            <div class="uk-navbar-center">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/css/uikit.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit-icons.min.js"></script>
+</head>
 
-                <div class="uk-navbar-center-left">
-                    <ul class="uk-navbar-nav">
-                    </ul>
-                </div>
-                <a class="uk-navbar-item  " href="#">   <h1 style="color: white;"><b>&lt;DevCamp</b>2024/&gt;</h1> </a>
-                <div class="uk-navbar-center-right">
-                    <ul class="uk-navbar-nav ">
-                    </ul>
-                </div>
+<body>
+  <nav class="uk-navbar-container  uk-navbar shadow-bottom uk-light" uk-navbar>
+    <div class="uk-navbar-left uk-container">
+      <a class="uk-navbar-item  uk-logo" routerLink="/bemvindo"><img class="logotop" src="/assets/logo.png" alt="Logo"></a>
 
-            </div>
-
-        </div>
     </div>
-</nav>
+    <div class="uk-navbar-right uk-container" style="margin-right:5%; ">
+
+      <ul class="uk-navbar-nav uk-visible@m">
+        <li><a routerLink="/bemvindo" uk-scroll="offset: 80">INÍCIO</a></li>
+        <li><a routerLink="/inscrever" uk-scroll="offset: 80">INSCREVER-SE</a></li>
+        <li><a routerLink="/agenda" uk-scroll="offset: 80">AGENDA</a></li>
+        <li><a routerLink="/validacao" uk-scroll="offset: 80">VALIDAR CERTIFICADO</a></li>
+        <li><a href="">ENTRAR NA SALA VIRTUAL</a></li>
+      </ul>
+      <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-nav" uk-toggle>
+        <span uk-navbar-toggle-icon></span>
+      </a>
+    </div>
+  </nav>
+
+  <div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+      <!-- Close button with arrow -->
+
+      <ul class="uk-nav uk-nav-default">
+
+        <li><a class="texto-offcanva" routerLink="/bemvindo" uk-scroll="offset: 80">> INÍCIO</a></li>
+        <li><a class="texto-offcanva" routerLink="/agenda" uk-scroll="offset: 80">> AGENDA</a></li>
+        <li><a routerLink="/inscrever" uk-scroll="offset: 80">INSCREVER-SE</a></li>
+        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> VALIDAR CERTIFICADO</a></li>
+        <li>  <button class="uk-offcanvas-close" type="button" uk-close>
+             <!-- Custom arrow icon -->
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>

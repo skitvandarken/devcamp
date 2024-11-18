@@ -1,0 +1,58 @@
+.card {
+  border: 2px solid;
+  border-image: linear-gradient(to right, red, darkred) 1;
+  position: relative;
+  overflow: hidden; /* Ensures the shine effect is confined to the border */
+  border-radius: 10px; /* Adjust this value to change the roundness of the corners */
+
+}
+
+.click{
+
+      font-weight: 400 !important;
+      color: #000 !important;
+
+
+}
+
+.click:hover {
+
+  font-weight: 500 !important;
+  color: #444444 !important;
+  transition: 0.5;
+
+}
+
+.texto-1{
+  color: #ff0000 !important;
+}
+/* Add this to your component's CSS file */
+
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+.card:hover {
+  border-image: linear-gradient(to right, red, rgb(255, 93, 93)) 1; /* Ensures the gradient remains on hover */
+}
+
+
+.fundo{
+  background-image: url('/assets/background.png');
+}

@@ -1,11 +1,54 @@
-.vermelho {
-    background-color: red;
-    color: white !important;
+.uk-navbar-nav > li > a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #525252 !important;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 2px; /* Adds some space between the text and the underline */
 }
 
-a {
+.uk-navbar-nav > li > a::after {
+  color: black !important;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: width 0.4s ease-in-out;
+}
 
-    color:white !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+.uk-navbar-nav > li > a:hover::after {
+  width: 100%;
+}
 
+a{
+
+  color: black !important;
+
+
+}
+
+
+.logotop {
+  text-align: left;
+  height: 120px;
+  width: auto;
+  display: flex;
+}
+
+.uk-offcanvas-bar {
+  background-color: red;
+  color: white !important;
+}
+
+.shadow-bottom {
+  box-shadow: -2px 6px 15px rgba(0, 0, 0, 0.1); /* Creates a shadow at the top */
+}
+
+.texto-offcanva {
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
 }

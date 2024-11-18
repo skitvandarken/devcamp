@@ -15,108 +15,97 @@
     text-decoration: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   .botao-fale {
-  
+
     background-color: white;
     color: green !important;
   }
-  
+
   .botao-fale:hover{
-  
+
     background-color: green !important;
     color: white !important;
     transition: 0.5s;
   }
-  
+
   .botao-agenda {
     color: red;
     background-color: white;
-  
+
   }
-  
+
   .botao-agenda:hover  {
-    
+
     color: white;
     background-color: rgb(168, 0, 0);
     cursor: pointer;
-  
+
   }
-  
+
   hr {
     opacity: 50%;
     stroke: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
-  
+
   }
-  
+
   .fundo-form {
-  
+
       background-color: white;
       border-color: white;
-    
+
     }
-  
-  
+
+
     .uk-button-danger{
       background-color: red;
     }
-  
+
     .uk-button-danger:hover{
-      
+
       background-color: rgb(143, 10, 10);
       transition: 0.5ms;
-  
+
     }
-    
-    
-    input[type=number]::-webkit-inner-spin-button, 
-    input[type=number]::-webkit-outer-spin-button { 
+
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      margin: 0; 
+      margin: 0;
     }
-    
-    
+
+
     .fundo-vermelho{
         background-color: red !important;
         color:white !important;
-      
+
       }
-      
+
       .fundo-vermelho:hover{
         background-color: white;
         color: red !important;
-        
-      
+
+
       }
-      
-      
-      
-      
+
       .botao {
         color: red;
         background-color: white;
-      
+
       }
-      
+
       .botao:hover  {
-        
+
         color: white;
         background-color: red;
-      
+
       }
-      
+
       .fundo{
-        
+
         overflow: auto; /* This hides overflowing content */
         position: relative; /* Make the container a positioning context */
         background-image: url('/assets/cloud.png');
@@ -126,15 +115,15 @@
         margin-top: 0%;
         height: 80%;
       }
-      
-      
-      
+
+
+
        .fundo, img {
           /* Set the image width slightly larger than the container */
       animation: breathe 4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-          
+
       }
-        
+
         @keyframes breathe {
           0% {
             transform: translateX(1); /* Start at original position */
@@ -149,5 +138,93 @@
             transform: translateX(1); /* Return to original position */
           }
         }
-      
-      
+
+        /* Container Flex para os botões */
+        .button-container {
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px; /* Espaço entre os botões */
+      }
+
+      /* Estilos dos botões */
+      .button {
+          padding: 12px 24px;
+          font-size: 1rem;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: transform 0.2s, background-color 0.3s;
+      }
+
+      /* Botão primário */
+      .button-primary {
+          background-color: #ffffff; /* Verde */
+          color:#000;
+      }
+
+      .button-primary:hover {
+          background-color: #45a049;
+          transform: scale(1.05);
+      }
+
+      /* Botão secundário */
+      .button-secondary {
+          background-color: #ba0000; /* Azul */
+          color: white;
+      }
+
+      .button-secondary:hover {
+          background-color: #007bb5;
+          transform: scale(1.05);
+      }
+
+      .background-div {
+        width: 100%;
+        background-image: url('/assets/devcamp2024.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .content-brinds{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .brind-text h1{
+        font-size: 50px;
+        font-weight: 400;
+      }
+
+      .background-div::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.781); /* ajusta a opacidade e a cor */
+        z-index: 1;
+      }
+
+      .contento {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .brind-text{
+        text-align: left;
+        width: 50%;
+      }
+
+      .brind-img{
+        width: 45%;
+      }
