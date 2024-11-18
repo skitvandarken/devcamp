@@ -12,15 +12,17 @@
 <body>
   <nav class="uk-navbar-container  uk-navbar shadow-bottom uk-light" uk-navbar>
     <div class="uk-navbar-left uk-container">
-      <a class="uk-navbar-item  uk-logo" routerLink="/inicio"><img class="logotop" src="/assets/logo.png" alt="Logo"></a>
+      <a class="uk-navbar-item  uk-logo" routerLink="/bemvindo"><img class="logotop" src="/assets/logo.png" alt="Logo"></a>
 
     </div>
-    <div class="uk-navbar-right uk-container" style="margin-right:20%">
+    <div class="uk-navbar-right uk-container" style="margin-right:5%; ">
 
       <ul class="uk-navbar-nav uk-visible@m">
-        <li><a routerLink="" uk-scroll="offset: 80">INSCREVER-SE</a></li>
-        <li><a routerLink="/servicos" uk-scroll="offset: 80">AGENDA</a></li>
+        <li><a routerLink="/bemvindo" uk-scroll="offset: 80">INÍCIO</a></li>
+        <li><a routerLink="/inscrever" uk-scroll="offset: 80">INSCREVER-SE</a></li>
+        <li><a routerLink="/agenda" uk-scroll="offset: 80">AGENDA</a></li>
         <li><a routerLink="/validacao" uk-scroll="offset: 80">VALIDAR CERTIFICADO</a></li>
+        <li><a href="">ENTRAR NA SALA VIRTUAL</a></li>
       </ul>
       <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-nav" uk-toggle>
         <span uk-navbar-toggle-icon></span>
@@ -34,9 +36,10 @@
 
       <ul class="uk-nav uk-nav-default">
 
-        <li><a class="texto-offcanva" routerLink="/inicio" uk-scroll="offset: 80">> Início</a></li>
-        <li><a class="texto-offcanva" routerLink="/servicos" uk-scroll="offset: 80">> Serviços</a></li>
-        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> Nossa História</a></li>
+        <li><a class="texto-offcanva" routerLink="/bemvindo" uk-scroll="offset: 80">> INÍCIO</a></li>
+        <li><a class="texto-offcanva" routerLink="/agenda" uk-scroll="offset: 80">> AGENDA</a></li>
+        <li><a routerLink="/inscrever" uk-scroll="offset: 80">INSCREVER-SE</a></li>
+        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> VALIDAR CERTIFICADO</a></li>
         <li>  <button class="uk-offcanvas-close" type="button" uk-close>
              <!-- Custom arrow icon -->
           </button>

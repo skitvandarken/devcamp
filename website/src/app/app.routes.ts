@@ -7,6 +7,8 @@ import { SalavirtualComponent } from './salavirtual/salavirtual.component';
 import { BemvindoComponent } from './pagina/bemvindo/bemvindo.component';
 import { ValidacaoComponent } from './validacao/validacao.component';
 import { SlidesComponent } from './slides/slides.component';
+import { AgendaComponent } from './agenda/agenda.component';
+import { InscreverComponent } from './inscrever/inscrever.component';
 
 
 export const routes: Routes = [
@@ -18,6 +20,9 @@ export const routes: Routes = [
     {path: 'teste', component:TesteComponent},
     {path:'salavirtual', component:SalavirtualComponent},
     {path:'validacao', component:ValidacaoComponent},
-    {path:'publicidade', component:SlidesComponent}
+    {path:'publicidade', component:SlidesComponent},
+    {path: 'agenda', component:AgendaComponent},
+    {path: 'inscrever', component:InscreverComponent}
+
 
 ];

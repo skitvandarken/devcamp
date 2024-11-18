@@ -1,9 +1,9 @@
 <app-navbar></app-navbar>
-<div class="uk-container uk-text-center uk-margin-large-top">
+<div style="height:500px;" class="uk-container uk-text-center uk-margin-large-top">
     <h1>Bem-vindo ao sistema de validação de Certificados</h1>
     <form [formGroup]="formValidacao" (ngSubmit)="onSubmit()">
         <p>Por favor introduza o ID do certificado a validar</p>
-        <input title="validacao" id="bilhete" class="uk-border-rounded uk-input uk-form-width-medium" type="text" formControlName="id">
+        <input title="validacao" id="bilhete" class="uk-border-rounded uk-input uk-form-width-medium" type="text" formControlName="id" placeholder="inserá o id do certificado">
         <div>
             <button type="submit"  class="uk-border-rounded uk-margin-medium-top uk-button uk-button-medium uk-button-danger" (ngSubmit)="onSubmit()">Verificar</button>
         </div>

@@ -9,11 +9,13 @@ import { GaleriaComponent } from "../../layout/galeria/galeria.component";
 import { GaleriaFotosComponent } from '../../layout/galeria-fotos/galeria-fotos.component';
 import { CalendarioComponent } from '../../layout/calendario/calendario.component';
 import { EspecialidadeComponent } from '../../layout/especialidade/especialidade.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-bemvindo',
   standalone: true,
   imports: [
+    RouterLink,
     NavbarComponent,
     BeneficiosComponent,
     TecnologiasComponent,

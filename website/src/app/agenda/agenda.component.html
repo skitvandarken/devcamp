@@ -1,0 +1,89 @@
+<app-navbar></app-navbar>
+
+<div class="uk-container fundo">
+<div class="uk-text-center tema">
+  <h1>Confire á agenda</h1>
+</div>
+
+<table class="uk-table uk-table-middle uk-table-divider">
+  <thead class="thead-tema">
+      <tr>
+          <th class="uk-width-small">Horário</th>
+          <th class="uk-text-center">Temas do Bootcamp</th>
+          <th>Formadores</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td class="uk-text-center"> <span uk-icon="clock"></span> 10:30 - 13:20</td>
+          <td class="uk-text-center">Lsed do eiusmod tempor incidmagna aliqua.</td>
+           <td class="uk-text-center" style="width: 150px;"><a class="uk-link-heading" href="#modal-overflow" uk-toggle><span uk-icon="eye"></span> L. Pedro Jorge</a></td>
+
+
+           <!---Modal formador-->
+           <div id="modal-overflow" uk-modal>
+            <div class="uk-modal-dialog">
+
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <div class="uk-modal-header model-cabecalho">
+                    <h2 class="uk-modal-title uk-text-center">Informações sobre o Formador</h2>
+                </div>
+
+                <div class="uk-modal-body perfil" uk-overflow-auto>
+                  <img class="uk-border-rundend " src="assets/pexels-yankrukov-8867479.jpg" width="200" height="200" alt="Border circle">
+                    <!---Perfil do formador-->
+                    <div class="text-perfil">
+                      <h2 class="uk-modal-title uk-text-center"><b>L. Pedro Jorge</b></h2>
+                        <p>Especialista de TI & Multimedia | DevOps Eng/Env, Full Stack Web Developer, Sys Admin & Consultant</p>
+                    </div>
+                </div>
+
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Ver Currículo</button>
+                    <a style="background-color: red;" class="uk-button uk-button-danger"><span uk-icon="linkedin"></span> LinkedIn</a>
+                </div>
+
+            </div>
+        </div>
+
+      </tr>
+      <tr>
+          <td><span uk-icon="clock"></span> 10:30 - 13:20</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+          <td><a class="uk-link-heading uk-text-center"><span uk-icon="eye"></span> L. Pedro Jorge</a></td>
+      </tr>
+
+
+      <tr>
+        <td><span uk-icon="clock"></span> 10:30 - 13:20</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+        <td><a class="uk-link-heading uk-text-center"><span uk-icon="eye"></span> L. Pedro Jorge</a></td>
+    </tr>
+
+    <tr>
+      <td><span uk-icon="clock"></span> 10:30 - 13:20</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td><a class="uk-link-heading uk-text-center"><span uk-icon="eye"></span> L. Pedro Jorge</a></td>
+  </tr>
+
+
+  <tr>
+    <td><span uk-icon="clock"></span> 10:30 - 13:20</td>
+    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+    <td><a class="uk-link-heading uk-text-center"><span uk-icon="eye"></span> L. Pedro Jorge</a></td>
+</tr>
+
+
+<tr>
+  <td><span uk-icon="clock"></span> 10:30 - 13:20</td>
+  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+  <td><a class="uk-link-heading uk-text-center"><span uk-icon="eye"></span> L. Pedro Jorge</a></td>
+</tr>
+
+
+  </tbody>
+</table>
+</div>
+
+<app-rodape></app-rodape>
